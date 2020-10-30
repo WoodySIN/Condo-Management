@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.geometry.Insets?>
+<fx:root type="javafx.stage.Stage" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+         minWidth="450" minHeight="600">
+    <scene>
+        <Scene>
+            <VBox>
+                <SplitPane id="splitPane" fx:id="splitPane" dividerPositions="0.3" VBox.vgrow="ALWAYS">
+                    <VBox fx:id="buttonList" minWidth="100" prefWidth="100" SplitPane.resizableWithParent="false">
+                        <StackPane fx:id="buttonListPanePlaceholder" minWidth="97" maxWidth="97" VBox.vgrow="ALWAYS"/>
+                    </VBox>
+                    <StackPane fx:id="unitListTablePlaceholder" prefWidth="600">
+                        <padding>
+                            <Insets top="10" right="10" bottom="10" left="10" />
+                        </padding>
+                    </StackPane>
+                    <!--
+                    <TableView fx:id="unitTable" prefWidth="600" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                        <columns>
+                            <TableColumn text="Block Number">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="block"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Unit Number">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="unit"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Resident Name">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="name"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Resident Contact">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="contact"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                        </columns>
+                    </TableView>
+                    -->
+                </SplitPane>
+            </VBox>
+        </Scene>
+    </scene>
+</fx:root>
